@@ -1,0 +1,156 @@
+body {
+	background-color: black;
+	overflow-x: hidden;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "arcadeclassic";
+}
+
+.box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 600px;
+	height: 400px;
+	background-color: black;
+	overflow: hidden;
+	border: 5px double white;
+}
+
+.box::after {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 2px;
+	left: calc(50% - 2px);
+	border: 2px dashed white;
+}
+
+.board,
+.enemy {
+	top: 0;
+	height: 70px;
+	width: 10px;
+	background-color: white;
+	position: absolute;
+	z-index: 5;
+}
+
+.enemy {
+	background-color: white;
+	right: 0;
+}
+
+.square {
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background: white;
+	position: absolute;
+	top: 380px;
+	z-index: 5;
+	left: 0;
+}
+
+button {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background-color: transparent;
+	color: white;
+	outline: none;
+	border: none;
+	padding: 20px;
+}
+
+.score {
+	background-color: transparent;
+	z-index: 2;
+	box-sizing: border-box;
+	display: inline-block;
+	padding: 20px;
+	color: white;
+	position: relative;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.score>div {
+	display: inline;
+	padding: 20px;
+	font-size: 35px;
+}
+
+.score .left {
+	color: white;
+}
+
+.score .right {
+	color: white;
+}
+
+.start {
+	z-index: 6;
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+}
+
+span {
+	color: black;
+	font-size: 60px;
+	display: inline-block;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+
+span:hover {
+	font-size: 70px;
+}
+
+.levels {
+	position: relative;
+	top: 100px;
+	right: 10px;
+}
+
+.settings {
+	position: absolute;
+	right: -200px;
+	top: 0;
+	width: 200px;
+	padding: 10px;
+	background-color: white;
+	transition: .5s;
+	/* border-radius: 10px 3px; */
+}
+
+.settings i {
+	position: absolute;
+	top: 20px;
+	left: -35px;
+	font-size: 20px;
+	color: black;
+	padding: 10px;
+	border-radius: 3px;
+	background-color: white;
+}
+
+.setbody {
+	position: relative;
+}
+
+.show {
+	right: 0;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
+
+<body>
+
+	<div class='box'>
+		<div class="start">
+			<span>Start</span>
+		</div>
+		<div class='square'></div>
+		<div class="board"></div>
+		<div class="enemy"></div>
+		<div class="score">
+			<div class="left">0</div>
+			<div class="right">0</div>
+		</div>
+		<button>Stop</button>
+	</div>
+
+	<div class="settings">
+		<i class="fa fa-bars" aria-hidden="true"></i>
+		<div class="setbody">
+			<label for="customRange2">board size</label>
+			<input type="range" class="custom-range" min="10" max="20" id="boardSize">
+			<label for="customRange2">ball size</label>
+			<input type="range" class="custom-range" min="10" max="20" id="ballSize">
+			<label for="customRange2">opponent board size</label>
+			<input type="range" class="custom-range" min="10" max="20" id="oBoardSize">
+			<label for="customRange2">ball velocity</label>
+			<input type="range" class="custom-range" min="10" max="20" id="velocity">
+			<input type="button" value="Start" class="btn btn-primary mt-3 form-control btnRestart">
+		</div>
+	</div>
+</body>
+
+</html>
